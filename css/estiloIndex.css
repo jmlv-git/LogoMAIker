@@ -6,7 +6,15 @@ body {
 }
 
 
-
+textarea {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 20px;
+	}
 .container {
 	display: flex;
 }
