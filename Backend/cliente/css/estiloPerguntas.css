@@ -1,0 +1,48 @@
+body {
+	background-color: #F28B0C;
+	color: #FFFFFF; /* Define a cor do texto para branco */
+	font-family: 'Roboto Black', sans-serif;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	}
+
+/*input[type="text"] {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 20px;
+	}
+*/
+/* Escolher entre input e textarea */
+textarea {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 20px;
+	}
+
+button {
+	background-color: #30BFA5;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 0px 10px;
+	}
+
+.pagination {
+	margin-top: 20px;
+	}
