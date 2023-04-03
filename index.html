@@ -4,27 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LogoMAIker - Crie sua Logo</title>
-	<script>
-		function validarFormulario() {
-		  var tipo = document.getElementById("tipoOrg").value;
-		  var func = document.getElementById("funcOrg").value;
-		  var unic = document.getElementById("unicOrg").value;
-		  
-		  if (tipo === "" || func === "" || unic === "") {
-		    alert("Por favor, preencha todos os campos.");
-		    event.preventDefault();
-		    return false;
-		  }
-		  
-		  return true;
-		}
-	</script>
 	<link rel="stylesheet" type="text/css" href="css/estiloIndex.css">
 </head>
-<body>
+<body id = "main">
 	<div class="container">
 		<div class="left">
-			<img src="imagens/logo.png" alt="Logo">
+			<img id ="logo" src="imagens/logo.png" alt="Logo">
 			<p>LogoMAIker</p>
 			<p>Crie a identidade visual perfeita para sua organização economizando tempo e dinheiro.</p>
 		</div>
@@ -43,11 +28,13 @@
 				<p>3. Descrena alguma característica marcante da organização:</p>
 				<textarea id="unicOrg" placeholder="Ex.:A empresa é composta por 3 irmãos gêmeos." required></textarea>
 
-				<div class="comp3"><a href="resultados.html" ><button onclick="validarFormulario()">Gerar</button></a></div>
+				<div class="comp3"><a ><button id="gerarLogo" >Gerar</button></a></div>
 			</div>
 			
 		</div>
 	</div>
+
+	<script src="cliente.js"></script>
 </body>
 </html>
 
