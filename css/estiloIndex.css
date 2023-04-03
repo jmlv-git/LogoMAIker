@@ -1,9 +1,16 @@
 body {
-	background-image: url('TelaInicial.png');
-	background-size: cover;
+	/*background-image: url('TelaInicial.png');
+	background-size: cover;*/
+	background-color: #F28B0C;
 	color: #FFFFFF; /* Define a cor do texto para branco */
 	font-family: 'Roboto Black', sans-serif;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
+
 
 
 textarea {
@@ -22,10 +29,13 @@ textarea {
 .left {
 	flex-basis: 50%;
 	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .left img {
-	max-width: 100%;
+	max-width: 80%;
 	height: auto;
 }
 
@@ -41,10 +51,11 @@ textarea {
 	padding: 50px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .comp1 {
-	flex: 2;
+	
 	font-size: 36px;
 }
 
