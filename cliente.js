@@ -15,22 +15,36 @@ async function query(data) {
 	return result;
 }
 
+
+function mostrarConfAdicionais() {
+  var configOpicionais = document.getElementById("config-opicionais");
+  configOpicionais.style.display = "block";
+  var botaoConf = document.getElementById("botao-conf-adic");
+  botaoConf.style.display = "none";
+}
+
+
+
 botaoGerarLogo.addEventListener('click', async function (e) {
 
     var tipo = document.getElementById("tipoOrg").value;
     var func = document.getElementById("funcOrg").value;
     var unic = document.getElementById("unicOrg").value;
+    var ele = document.getElementById("elemento").value;
+    var cor = document.getElementById("cor").value;
     
     if (tipo === "" || func === "" || unic === "") {
       alert("Por favor, preencha todos os campos.");
       e.preventDefault();
-    }
-
-    let promt = tipo;
+    }else {/faz requisicao/
+      let promt = tipo;
 
     var blob = await query({"inputs": promt}).then((response) => {
-		return response;
-	});
+    return response;
+  });
+    }
+
+    
 
     console.log(blob)
     let imgGerada = new Image();

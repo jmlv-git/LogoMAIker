@@ -18,17 +18,25 @@
 				<p>Nos conte um pouco sobre sua organização.</p>
 			</div>
 			<div class="comp2">
-				<p>1. Para que tipo de organização se deseja criar a logo?</p>
+				<p>1. Para que tipo de organização se deseja criar a Logo?*</p>
 				<!--<input type="text" placeholder="Digite aqui sua entrada"> -->
 				<textarea id="tipoOrg" placeholder="Ex.: Micro empresa." required></textarea>
 
-				<p>2. O que a organização faz?</p>
+				<p>2. O que a organização faz?*</p>
 				<textarea id="funcOrg" placeholder="Ex.: Vende bijuterias e roupas a preços populares." required></textarea>
 
-				<p>3. Descrena alguma característica marcante da organização:</p>
+				<p>3. Descrena alguma característica marcante da organização:*</p>
 				<textarea id="unicOrg" placeholder="Ex.:A empresa é composta por 3 irmãos gêmeos." required></textarea>
 
-				<div class="comp3"><a ><button id="gerarLogo" >Gerar</button></a></div>
+				<button id="botao-conf-adic" onclick="mostrarConfAdicionais()">Configurações opicionais</button>
+				<div id="config-opicionais" style="display:none">
+					<p>4. Qual elemnto você deseja que sua Logo contenha?</p>
+					<textarea id="elemento" placeholder="Ex.:3 homens iguais." ></textarea>
+					<p>5. Qual cor ou conjunto de cor você deseja em sua logo?</p>
+					<textarea id="cor" placeholder="Ex.:Azul e amarelo." ></textarea>
+				</div>
+
+				<div class="comp3"><a ><button id="gerarLogo" >Gerar Logo</button></a></div>
 			</div>
 			
 		</div>
