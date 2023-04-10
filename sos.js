@@ -193,7 +193,7 @@ const tokenApiOpenJourney = "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";
 var { Configuration, OpenAIApi } = require("openai");
 
 let gpt_configuration = new Configuration({
-	apiKey: "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",
+	apiKey: "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",
 });
 delete gpt_configuration.baseOptions.headers['User-Agent'];
 
