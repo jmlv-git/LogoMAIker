@@ -45,7 +45,10 @@ async function gpt_request(data) {
 function genPromp(l){
   if (!l[3]) l[3] = " os elementos que mais fazem sentido"
   if(!l[4]) l[4] = " as cores que mais fazem sentido"
-  return `Imagine e descreva a aparência, com no máximo 250 caracteres, uma logo para uma ${l[0]} que faz ${l[1]} de caracteristica ${l[2]} contendo tanto ${l[3]} quanto as cor/cores ${l[4]}. Descreva apenas a imagem em inglês, sem mencionar textos`
+  return `Imagine e descreva a aparência, com no máximo 250 caracteres, 
+  uma logo para uma ${l[0]} que faz ${l[1]} de caracteristica ${l[2]} contendo tanto 
+  ${l[3]} quanto as cor/cores ${l[4]}.
+   Descreva apenas a imagem em inglês, sem mencionar textos`
 }
 
 botaoadicional.addEventListener('click', async function (e) {
