@@ -22,10 +22,10 @@
 				<!--<input type="text" placeholder="Digite aqui sua entrada"> -->
 				<textarea id="tipoOrg" placeholder="Ex.: Micro empresa." required></textarea>
 
-				<p>2. O que a organização faz?*</p>
+				<p>2. Descreva em uma única frase o que a organização faz?*</p>
 				<textarea id="funcOrg" placeholder="Ex.: Vende bijuterias e roupas a preços populares." required></textarea>
 
-				<p>3. Descrena alguma característica marcante da organização:*</p>
+				<p>3. Descreva em uma única frase algumascaracterísticas da organização*</p>
 				<textarea id="unicOrg" placeholder="Ex.:A empresa é composta por 3 irmãos gêmeos." required></textarea>
 
 				<button id="botaoadicional">Configurações opicionais</button></a>
@@ -35,12 +35,17 @@
 					<p>5. Qual cor ou conjunto de cor você deseja em sua logo?</p>
 					<textarea id="cor" placeholder="Ex.:Azul e amarelo." ></textarea>
 				</div>
-
-				<div class="comp3"><a ><button id="gerarLogo" >Gerar Logo</button></a></div>
+				
+				<div>
+					<div class="comp3"><a ><button id="gerarLogo" >OpenJourney</button></a></div>
+				    <div class="comp3"><a ><button id="gerarLogo2" >DALLE-2</button></a></div>
+				</div>
+				
 			</div>
 			
 		</div>
 	</div>
+	<div id="apresentacao-logos"></div>
 	<script src="sos.js"></script>
 </body>
 </html>
