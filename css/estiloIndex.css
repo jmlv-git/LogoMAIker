@@ -80,5 +80,22 @@ textarea {
 }
 
 .comp3 {
-	flex: 1;
+	display: flex;
+	justify-content: space-around;
+}
+
+.apresentacao-div-logos {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: row;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.apresentacao-logos {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 }
