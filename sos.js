@@ -195,7 +195,7 @@ const tokenApiOpenJourney = "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";
 var { Configuration, OpenAIApi } = require("openai");
 
 let gpt_configuration = new Configuration({
-	apiKey: "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",
+	apiKey: "Chave",
 });
 delete gpt_configuration.baseOptions.headers['User-Agent'];
 
@@ -221,7 +221,7 @@ async function queryDalle2(data) {
 		"https://api.openai.com/v1/images/generations",
 		{
 			headers: { 
-				'Authorization': `Bearer ${'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'}`,
+				'Authorization': `Bearer ${'Chave'}`,
 				'Content-Type': 'application/json',
 			},
 			method: "POST",
@@ -311,7 +311,8 @@ botaoGerarLogo.addEventListener('click', async function (e) {
     var unic = document.getElementById("unicOrg").value;
     var ele = document.getElementById("elemento").value;
     var cor = document.getElementById("cor").value;
-    
+    var indicar_imagens = document.getElementById("indicador-imagens-geradas");
+    indicar_imagens.style.display = "block";
     if (tipo === "" || func === "" || unic === "") {
       alert("Por favor, preencha todos os campos.");
       e.preventDefault();
@@ -353,7 +354,8 @@ botaoGerarLogo2.addEventListener('click', async function (e) {
   var unic = document.getElementById("unicOrg").value;
   var ele = document.getElementById("elemento").value;
   var cor = document.getElementById("cor").value;
-  
+  var indicar_imagens = document.getElementById("indicador-imagens-geradas");
+  indicar_imagens.style.display = "block";
   if (tipo === "" || func === "" || unic === "") {
     alert("Por favor, preencha todos os campos.");
     e.preventDefault();

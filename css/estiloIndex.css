@@ -94,8 +94,18 @@ textarea {
 	margin-bottom: 10%;
 }
 
-.apresentacao-logos {
+
+.apresentacao-div-logos img {
+	width: 20%;
+	height: 20%;
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-bottom: 10px;
+  }
+
+#indicador-imagens-geradas p {
+	font-size: 36px;
+	color: #FFFFFF;
+    font-family: 'Roboto Black', sans-serif;
+	align-items: center;
 }
